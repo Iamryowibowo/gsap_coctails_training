@@ -10,7 +10,6 @@ const Hero = () => {
 
   useGSAP(() => {
     const heroSplit = new SplitText(".title", { type: "chars, words " });
-
     const paragpraphSplit = new SplitText(".subtitle", { type: "lines" });
 
     heroSplit.chars.forEach((chars) => chars.classList.add("text-gradient"));
